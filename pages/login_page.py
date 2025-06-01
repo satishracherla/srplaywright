@@ -22,7 +22,7 @@ class LoginPage:
         return self.page.locator("a[href='/lightning/page/home']").is_visible()
 
     # Create a locator.
-get_started = page.get_by_role("link", name="Get started")
+#get_started = page.get_by_role("link", name="Get started")
 
 # Click it.
-get_started.click()
+#get_started.click()
