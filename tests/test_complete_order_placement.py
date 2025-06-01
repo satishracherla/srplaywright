@@ -1,5 +1,5 @@
 from playwright.sync_api import Page
-from pages.login_page import LoginPage
+from pages.sdlogin_page import SdLoginPage
 from pages.products_page import ProductsPage
 from pages.cart_page import CartPage
 from pages.checkout_info_page import CheckoutInfoPage
@@ -9,7 +9,7 @@ from pages.complete_page import CompletePage
 def test_complete_order_placement(page: Page):
     page.goto("https://www.saucedemo.com/")
 
-    login = LoginPage(page)
+    login = SdLoginPage(page)
     login.login("standard_user", "secret_sauce")
 
     products = ProductsPage(page)

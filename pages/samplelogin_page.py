@@ -1,6 +1,6 @@
 from playwright.sync_api import Page
 
-class LoginPage:
+class SampleLoginPage:
     def __init__(self, page: Page):
         self.page = page
         #username_input = page.get_by_label("Username")

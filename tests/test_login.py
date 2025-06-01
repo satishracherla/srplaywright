@@ -1,11 +1,11 @@
 from time import sleep
 
-from pages.login_page import LoginPage
+from pages.samplelogin_page import LoginPage
 
 def test_valid_login(page):
-    login_page = LoginPage(page)
-    login_page.navigate()
-    login_page.login("satish.r177@agentforce.com", "Agentforce@2025")
+    samplelogin_page = LoginPage(page)
+    samplelogin_page.navigate()
+    samplelogin_page.login("satish.r177@agentforce.com", "Agentforce@2025")
     sleep(10)
     # Verify that the login was successful
-    assert login_page.is_logged_in()
+    assert samplelogin_page.is_logged_in()

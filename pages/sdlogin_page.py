@@ -1,6 +1,6 @@
 from playwright.sync_api import Page
 
-class LoginPage:
+class SdLoginPage:
     def __init__(self, page: Page):
         self.page = page
         self.username_input = page.locator("#user-name")
