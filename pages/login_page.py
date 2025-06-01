@@ -1,3 +1,4 @@
+import page
 from playwright.sync_api import Page
 
 class LoginPage:
@@ -19,3 +20,9 @@ class LoginPage:
     def is_logged_in(self) -> bool:
       #  home_link = self.page.get_by_role("link", name="Home")
         return self.page.locator("a[href='/lightning/page/home']").is_visible()
+
+    # Create a locator.
+get_started = page.get_by_role("link", name="Get started")
+
+# Click it.
+get_started.click()
