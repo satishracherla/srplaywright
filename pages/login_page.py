@@ -1,4 +1,3 @@
-import page
 from playwright.sync_api import Page
 
 class LoginPage:
